@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOPU 49 — Happy Birthday, Father</title>
+  <meta name="description" content="49 laps around the sun. A tribute to Gopu — Father, mentor and Managing Partner of KGRN Accounting Associates, Dubai.">
+  <meta property="og:title" content="GOPU 49 — Happy Birthday, Father">
+  <meta property="og:description" content="49 laps around the sun. The man. The mentor. The legend.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111112'/%3E%3Ctext x='32' y='46' font-family='Arial Black,sans-serif' font-size='40' font-weight='900' fill='%23D2FF00' text-anchor='middle'%3E49%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================= PRELOADER ======================= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__word">GOPU</div>
+      <div class="loader__count"><span id="loaderCount">00</span><em>/ 49</em></div>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+    </div>
+  </div>
+
+  <!-- ======================= CURSOR / PROGRESS / NOISE ======================= -->
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="nav">
+    <a class="nav__logo" href="#top" data-hover>G<span>.49</span></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#man" data-hover>The Man</a>
+      <a href="#journey" data-hover>Journey</a>
+      <a href="#firm" data-hover>The Firm</a>
+      <a href="#gallery" data-hover>Gallery</a>
+      <a href="#wish" class="nav__cta" data-hover>Make a Wish</a>
+    </nav>
+    <div class="nav__tag">EST. 1977 — DXB</div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__49" aria-hidden="true" data-parallax="0.06">49</div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>EST. 1977 &nbsp;•&nbsp; DUBAI, UAE &nbsp;•&nbsp; LAP 49 OF ∞</p>
+        <h1 class="hero__title" aria-label="GOPU">
+          <span class="hero__letter">G</span><span class="hero__letter">O</span><span class="hero__letter">P</span><span class="hero__letter">U</span>
+        </h1>
+        <p class="hero__sub" data-reveal>HAPPY <em>49TH</em> BIRTHDAY, FATHER.</p>
+        <p class="hero__line" data-reveal>The man. The mentor. The managing partner.</p>
+        <a class="btn btn--lime" href="#man" data-hover data-reveal>START THE CELEBRATION <span class="btn__arrow">↓</span></a>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true"><span></span>SCROLL</div>
+    </section>
+
+    <!-- ======================= MARQUEE ======================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>HAPPY BIRTHDAY FATHER ✦ 49 YEARS OF EXCELLENCE ✦ THE PRIDE OF DUBAI ✦ GOPU ✦ </span>
+        <span>HAPPY BIRTHDAY FATHER ✦ 49 YEARS OF EXCELLENCE ✦ THE PRIDE OF DUBAI ✦ GOPU ✦ </span>
+      </div>
+    </div>
+
+    <!-- ======================= 01 / THE MAN ======================= -->
+    <section class="section man" id="man">
+      <div class="section__head">
+        <span class="section__index" data-reveal>01</span>
+        <h2 class="section__title" data-reveal>THE MAN.<br><span class="stroke">THE MENTOR.</span><br>THE LEGEND.</h2>
+      </div>
+
+      <div class="man__body">
+        <figure class="frame frame--portrait" data-tilt data-reveal>
+          <img src="assets/photos/portrait.jpg" alt="Father — Gopu" onerror="this.closest('.frame').classList.add('frame--empty')">
+          <div class="frame__fallback"><span>G</span><p>add assets/photos/portrait.jpg</p></div>
+          <figcaption>FATHER — SINCE DAY ONE</figcaption>
+        </figure>
+
+        <div class="man__copy">
+          <p class="man__lead" data-reveal>Father, some people chase greatness. <strong>You quietly built it</strong> — a family, a firm, and a name that stands for trust across an entire city.</p>
+          <p data-reveal>Forty-nine years in, and you still outwork, outthink and out-smile everyone in the room. From India to Dubai, from first ledgers to leading one of the city's most respected accounting firms — every number you have ever balanced is small compared to the difference you've made to us.</p>
+          <p data-reveal>This page is a small thing. What you've given us is not.</p>
+        </div>
+      </div>
+
+      <!-- Telemetry stats -->
+      <div class="stats" data-reveal>
+        <div class="stat"><span class="stat__num" data-count="49">0</span><span class="stat__label">LAPS AROUND THE SUN</span></div>
+        <div class="stat"><span class="stat__num" data-count="17897">0</span><span class="stat__label">DAYS OF GREATNESS</span></div>
+        <div class="stat"><span class="stat__num" data-count="2007">0</span><span class="stat__label">KGRN FOUNDED</span></div>
+        <div class="stat"><span class="stat__num">∞</span><span class="stat__label">LESSONS TAUGHT</span></div>
+      </div>
+    </section>
+
+    <!-- ======================= 02 / THE JOURNEY ======================= -->
+    <section class="section journey" id="journey">
+      <div class="journey__watermark" aria-hidden="true" data-parallax="0.04">1977</div>
+      <div class="section__head">
+        <span class="section__index" data-reveal>02</span>
+        <h2 class="section__title" data-reveal>49 LAPS.<br><span class="stroke">ZERO PIT STOPS.</span></h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__year">1977</span>
+          <div class="timeline__card">
+            <h3>LIGHTS OUT</h3>
+            <p>The story begins. A boy is born who will one day carry a family — and a firm — on his shoulders.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__year">THE GRIND</span>
+          <div class="timeline__card">
+            <h3>THE EARLY LAPS</h3>
+            <p>Long days, longer nights. Books, ledgers, ambition. The discipline that would define everything was forged here.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__year">2007</span>
+          <div class="timeline__card">
+            <h3>KGRN IS BORN</h3>
+            <p>Dubai. A leap of faith becomes KGRN Accounting Associates — built from scratch, one client and one handshake at a time.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__year">TODAY</span>
+          <div class="timeline__card">
+            <h3>STILL LEADING</h3>
+            <p>A team of professionals, offices across the Emirates, and a reputation money can't buy. And at home — still the first to laugh, the last to rest.</p>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--now" data-reveal>
+          <span class="timeline__year">49</span>
+          <div class="timeline__card timeline__card--lime">
+            <h3>LAP 49 — FLAT OUT</h3>
+            <p>No signs of slowing down. The best chapters are still being written.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======================= 03 / THE FIRM ======================= -->
+    <section class="section firm" id="firm">
+      <div class="firm__watermark" aria-hidden="true" data-parallax="0.05">KGRN</div>
+      <div class="section__head">
+        <span class="section__index" data-reveal>03</span>
+        <h2 class="section__title" data-reveal>TEAM PRINCIPAL,<br><span class="stroke">KGRN — DUBAI.</span></h2>
+      </div>
+
+      <p class="firm__lead" data-reveal>Since 2007, Father has led <strong>KGRN Accounting Associates</strong> from Business Bay, Dubai — turning a start-up practice into a full-grid operation trusted across the UAE.</p>
+
+      <div class="firm__cards">
+        <div class="card" data-tilt data-reveal><span class="card__num">A</span><h3>AUDIT &amp; ASSURANCE</h3><p>Precision under pressure. Every figure accounted for, every time.</p></div>
+        <div class="card" data-tilt data-reveal><span class="card__num">T</span><h3>TAX &amp; VAT</h3><p>Navigating the rulebook the way champions read a racetrack.</p></div>
+        <div class="card" data-tilt data-reveal><span class="card__num">B</span><h3>BUSINESS ADVISORY</h3><p>The strategist businesses call before they make their next move.</p></div>
+        <div class="card" data-tilt data-reveal><span class="card__num">P</span><h3>ACCOUNTING &amp; PAYROLL</h3><p>The engine room — running clean, running quiet, never missing a beat.</p></div>
+      </div>
+
+      <div class="firm__strip" data-reveal>
+        <div><strong>HQ</strong>Business Bay, Dubai</div>
+        <div><strong>ON THE GRID</strong>Dubai · Abu Dhabi · Sharjah · RAK</div>
+        <div><strong>SINCE</strong>2007 — 19 seasons strong</div>
+        <div><strong>ROLE</strong>Founder &amp; Managing Partner</div>
+      </div>
+    </section>
+
+    <!-- ======================= 04 / GALLERY ======================= -->
+    <section class="section gallery" id="gallery">
+      <div class="section__head">
+        <span class="section__index" data-reveal>04</span>
+        <h2 class="section__title" data-reveal>THE PIT WALL.<br><span class="stroke">MOMENTS THAT MATTER.</span></h2>
+      </div>
+
+      <div class="gallery__grid">
+        <figure class="frame" data-tilt data-reveal>
+          <img src="assets/photos/photo-1.jpg" alt="Memory with Father" onerror="this.closest('.frame').classList.add('frame--empty')">
+          <div class="frame__fallback"><span>G</span><p>add assets/photos/photo-1.jpg</p></div>
+          <figcaption>01 — THE CLASSICS</figcaption>
+        </figure>
+        <figure class="frame" data-tilt data-reveal>
+          <img src="assets/photos/photo-2.jpg" alt="Memory with Father" onerror="this.closest('.frame').classList.add('frame--empty')">
+          <div class="frame__fallback"><span>G</span><p>add assets/photos/photo-2.jpg</p></div>
+          <figcaption>02 — FAMILY FIRST</figcaption>
+        </figure>
+        <figure class="frame" data-tilt data-reveal>
+          <img src="assets/photos/photo-3.jpg" alt="Memory with Father" onerror="this.closest('.frame').classList.add('frame--empty')">
+          <div class="frame__fallback"><span>G</span><p>add assets/photos/photo-3.jpg</p></div>
+          <figcaption>03 — THE BOSS AT WORK</figcaption>
+        </figure>
+        <figure class="frame" data-tilt data-reveal>
+          <img src="assets/photos/photo-4.jpg" alt="Memory with Father" onerror="this.closest('.frame').classList.add('frame--empty')">
+          <div class="frame__fallback"><span>G</span><p>add assets/photos/photo-4.jpg</p></div>
+          <figcaption>04 — 49 &amp; COUNTING</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= 05 / THE LETTER ======================= -->
+    <section class="section letter" id="letter">
+      <div class="section__head">
+        <span class="section__index" data-reveal>05</span>
+        <h2 class="section__title" data-reveal>DEAR FATHER,</h2>
+      </div>
+      <div class="letter__body" data-reveal>
+        <p>They say you should meet your heroes carefully — they might disappoint you. I got lucky. Mine lives at home.</p>
+        <p>Thank you for every sacrifice we saw, and the hundred more we didn't. For teaching us that integrity is the only currency that never devalues. For building KGRN with your bare hands and still never missing what mattered at home.</p>
+        <p>Forty-nine looks good on you. But then again, everything always has.</p>
+        <p class="letter__sign">With all my love,<br><span>Sushaanth</span></p>
+      </div>
+    </section>
+
+    <!-- ======================= 06 / THE WISH ======================= -->
+    <section class="section wish" id="wish">
+      <div class="section__head section__head--center">
+        <span class="section__index" data-reveal>06</span>
+        <h2 class="section__title" data-reveal>MAKE A WISH,<br><span class="stroke">FATHER.</span></h2>
+      </div>
+
+      <div class="cake" data-reveal aria-hidden="true">
+        <div class="cake__candles">
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+        </div>
+        <div class="cake__top"></div>
+        <div class="cake__mid">4 9</div>
+        <div class="cake__base"></div>
+        <div class="cake__plate"></div>
+      </div>
+
+      <button class="btn btn--lime btn--big" id="blowBtn" data-hover data-reveal>
+        <span class="btn__fill" id="blowFill"></span>
+        <span class="btn__text">HOLD TO BLOW THE CANDLES</span>
+      </button>
+      <p class="wish__hint" data-reveal>press and hold — then make it count</p>
+
+      <div class="wish__reveal" id="wishReveal" aria-live="polite">
+        <p class="wish__granted">WISH GRANTED ✦</p>
+        <h3>HAPPY 49TH<br>BIRTHDAY<br><span>FATHER</span></h3>
+        <button class="btn btn--ghost" id="againBtn" data-hover>RUN IT BACK ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="marquee marquee--footer" aria-hidden="true">
+      <div class="marquee__track">
+        <span>GOPU ✦ 49 ✦ FOREVER P1 ✦ </span>
+        <span>GOPU ✦ 49 ✦ FOREVER P1 ✦ </span>
+        <span>GOPU ✦ 49 ✦ FOREVER P1 ✦ </span>
+      </div>
+    </div>
+    <div class="footer__row">
+      <span>BUILT WITH LOVE, FOR THE GREATEST FATHER</span>
+      <span>GOPU.49 — DUBAI — 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
