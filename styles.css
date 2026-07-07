@@ -488,7 +488,22 @@ img { max-width: 100%; display: block; }
   font-size: 0.7rem; letter-spacing: 0.24em; margin-bottom: 0.3rem;
 }
 
-/* ============ 04 LETTER ============ */
+/* ============ 04 MOMENTS ============ */
+.moments__lead {
+  max-width: 56ch; color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.3rem); font-weight: 300;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+.moments__grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+.frame--moment img { aspect-ratio: 4 / 3; }
+.frame--moment.frame--empty .frame__fallback { aspect-ratio: 4 / 3; }
+.moments__grid .frame:nth-child(2) { margin-top: 24px; }
+@media (max-width: 640px) { .moments__grid .frame:nth-child(2) { margin-top: 0; } }
+
+/* ============ 05 LETTER ============ */
 .letter__body {
   max-width: 62ch; font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 300; line-height: 1.75;
