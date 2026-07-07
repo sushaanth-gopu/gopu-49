@@ -1,24 +1,27 @@
-# GOPU.49 — Happy Birthday, Father 🏁
+# GOPU.49 — Happy 49th Birthday 🎂
 
-A birthday tribute website for **Gopu** — Father, mentor, and Founder & Managing Partner of
+A birthday tribute website for **Gopu** — Founder & Managing Partner of
 **KGRN Accounting Associates**, Dubai — celebrating his **49th birthday**.
 
-Design inspired by [landonorris.com](https://landonorris.com): near-black canvas, neon-lime accent,
-huge display typography, marquees, and cinematic scroll animations.
+Colors follow the KGRN brand (orange + white), with full **dark and light modes**.
+The design language — huge display typography, marquees, cinematic scroll animations —
+takes its cues from [landonorris.com](https://landonorris.com).
 
 ## ✨ What's inside
 
+- **Dark / light mode** toggle (remembers your choice, follows system preference by default)
 - **Preloader** that counts up to 49
 - **Hero** with giant staggered "GOPU" type and a massive outlined "49"
-- **Telemetry-style stats** (49 laps around the sun, 17,897 days of greatness…)
-- **Journey timeline** — "49 laps, zero pit stops"
+- **Stats** (49 years of excellence, 17,897 days on record…) and "The Balance Sheet" —
+  assets: family, integrity, vision; liabilities: none found
+- **Journey timeline** — "49 years, fully accounted for"
 - **The Firm** — a tribute to KGRN Accounting Associates, Business Bay, Dubai
-- **Photo gallery** with tilt-on-hover frames
-- **A letter** to Father
+- **A letter** to Gopu
 - **Make a Wish** — hold the button to blow out the candles → confetti 🎉
 
-Plus: custom cursor, scroll progress bar, film-grain overlay, reveal-on-scroll animations,
-and full `prefers-reduced-motion` support. Zero dependencies — pure HTML/CSS/JS.
+Plus: custom cursor, scroll progress bar, film-grain overlay, tilt-on-hover frames,
+reveal-on-scroll animations, and full `prefers-reduced-motion` support.
+Zero dependencies — pure HTML/CSS/JS.
 
 ## 📸 Add photos
 
@@ -26,8 +29,8 @@ Drop photos into `assets/photos/` with these exact names:
 
 | File | Where it appears |
 | --- | --- |
-| `portrait.jpg` | "The Man" section (portrait, 3:4 works best) |
-| `photo-1.jpg` … `photo-4.jpg` | Gallery (4:5 works best) |
+| `portrait.jpg` | "The Man" section — the suit portrait |
+| `office.jpg` | "The Firm" section — at the desk in the KGRN office |
 
 Until photos are added, each frame shows a styled monogram placeholder.
 

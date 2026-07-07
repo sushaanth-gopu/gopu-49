@@ -6,6 +6,14 @@
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- THEME TOGGLE (dark <-> light) ---------- */
+  const themeToggle = document.getElementById("themeToggle");
+  themeToggle.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("theme", next);
+  });
+
   /* ---------- PRELOADER: count 00 -> 49 ---------- */
   const loader = document.getElementById("loader");
   const loaderCount = document.getElementById("loaderCount");
@@ -136,9 +144,16 @@
   sizeCanvas();
   window.addEventListener("resize", sizeCanvas);
 
-  const COLORS = ["#d2ff00", "#f4f4f2", "#9dbf00", "#7a8f00", "#ffffff"];
+  // confetti follows the active theme's palette
+  const confettiColors = () => {
+    const css = getComputedStyle(document.documentElement);
+    const accent = css.getPropertyValue("--accent").trim();
+    const ink = css.getPropertyValue("--ink").trim();
+    return [accent, accent, accent, ink, "#ffb066"];
+  };
 
   const burst = (x, y, count) => {
+    const COLORS = confettiColors();
     for (let i = 0; i < count; i++) {
       const angle = Math.random() * Math.PI * 2;
       const speed = 5 + Math.random() * 13;
